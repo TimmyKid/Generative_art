@@ -6,16 +6,22 @@ $grey: #dedede
   padding: 0
   background-color: lighten($grey, 5%)
 
+.container
+  position: relative
+  display: flex
+  justify-content: center
+
 .frame
-  height: 30em
-  width: 25em
+  position: absolute
+  top: 50vh
+  transform: translateY(-50%)
+  height: 75vh
+  width: clamp(1em, 21em, 25em)
   border: .5em solid $black
   background-color: white
-  margin: 5% auto
+  margin: 0 auto
   box-shadow: 0 2px 5px rgba(0,0,0.3)
-
-.realistic
-  background-color: $grey
-  margin: 20px
-  height: 92%
-  width: 90%
+  padding: 10px
+  .realistic
+    background-color: red
+    height: 100%
