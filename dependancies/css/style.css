@@ -1,3 +1,23 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+}
 
+.frame {
+  height: 30em;
+  width: 25em;
+  border: 0.5em solid #1d1d1d;
+  background-color: white;
+  margin: 5% auto;
+  box-shadow: 0 2px 5px black;
+}
+
+.realistic {
+  background-color: red;
+  margin: 20px;
+  height: 92%;
+  width: 90%;
+}
 
 /*# sourceMappingURL=style.css.map */
