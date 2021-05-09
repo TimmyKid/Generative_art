@@ -2,7 +2,7 @@
 var canvas = document.querySelector('canvas');
 var context = canvas.getContext('2d');
 
-var size = 300;
+var size = 360;
 var step = 20;
 var dpr = window.devicePixelRatio;
 
@@ -23,8 +23,13 @@ function draw(x, y, width, height) {
     context.moveTo(x + width, y);
     context.lineTo(x, y + height)
   }
+  context.stroke();
 
 }
-draw( 0, 0, size, size);
+// draw( 0, 0, size, size);
 
-context.stroke();
+for (var x = 0; x < size; x += step) {
+  for(var y = 0; y < size; y += step) {
+    draw(x,y,step,step);
+  }
+}
